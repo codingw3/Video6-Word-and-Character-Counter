@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word and Character Counter</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/pen-solid.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <label class="fw-bold fs-2em" for="text-input"
+        ><i class="fa-solid fa-pen"></i> Text</label
+      >
+
+      <textarea
+        class="mt-10"
+        id="text-input"
+        placeholder="Enter your text here"
+        rows="5"
+        cols="10"
+      ></textarea>
+
+      <div class="mt-10">
+        <label for="count-words">Count Words</label>
+        <input
+          type="radio"
+          id="count-words"
+          name="count-type"
+          value="words"
+          checked
+        />
+
+        <label for="count-chars">Count Characters</label>
+        <input type="radio" id="count-chars" name="count-type" value="chars" />
+      </div>
+
+      <p class="mt-10 fs-2em">
+        <span class="fw-bold" id="count">0</span>
+        <span id="count-label">words</span>
+      </p>
+
+      <button class="mt-10" id="btn-clear">Clear</button>
+    </div>
+
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
