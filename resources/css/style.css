@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: auto;
 }
 
 .container {
@@ -55,7 +55,6 @@ button {
   border: none;
   background-color: var(--green);
   cursor: pointer;
-  font-weight: bold;
   transition: background-color 0.3s;
 }
 

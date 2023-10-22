@@ -24,9 +24,10 @@ textInput.addEventListener("input", updateCount);
 countWordsRadio.addEventListener("change", updateCount);
 countCharsRadio.addEventListener("change", updateCount);
 
-updateCount(); // Inicializa o contador na carga da página
+updateCount();
 
 btnClear.addEventListener("click", function () {
   count.textContent = 0;
   textInput.value = "";
+  textInput.focus();
 });
